@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Salud</title>
+    <script src="jquery-3.6.4.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
@@ -27,12 +28,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -44,67 +47,65 @@
                 </div>
             </nav>
         </div>
-
     </header>
     <main>
+        <div class="container mt-5">
         <!-- NOTICIAS -->
-        <div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="/assets/img/informe_minsal.jpg" alt="Card image">
-                <div class="card-body">
-                <a href="https://radio.uchile.cl/2023/06/25/minsal-reporta-un-861-de-ocupacion-de-camas-uci-pediatricas-por-virus-respiratorios/"><h4 class="card-title">Minsal reporta un 86,1% de ocupación de camas UCI pediátricas por virus respiratorios</h4></a>
-            </div>
-            </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="/assets/img/educacion_humanizada.jpg" alt="Card image">
-                <div class="card-body">
-                <a href="https://radio.uchile.cl/2023/07/19/por-una-educacion-mas-humanizada-gobierno-presenta-estrategia-de-salud-mental-en-educacion-superior/"><h4 class="card-title">Por una educación “más humanizada”: Gobierno presenta Estrategia de Salud Mental en Educación Superior</h4></a>
-            </div>
-            </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="/assets/img/mascarillas.jpg" alt="Card image">
-                <div class="card-body">
-                <a href="https://radio.uchile.cl/2023/06/15/uso-de-mascarillas-y-reforzamiento-de-vacunacion-expertos-y-el-gobierno-debaten-medidas-para-contener-crisis-de-virus-respiratorios/"><h4 class="card-title">Uso de mascarillas y reforzamiento de vacunación: Expertos y el Gobierno debaten medidas para contener crisis de virus respiratorios</h4></a>
-            </div>
-            </div>
-        
-
-        </div>
-
-        <!-- LOGIN -->
-        <div>
+            <div class="row">
+                <div class="col-sm-3">
+                <div>
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="/assets/img/informe_minsal.jpg" alt="Card image">
+                        <div class="card-body">
+                        <a href="https://radio.uchile.cl/2023/06/25/minsal-reporta-un-861-de-ocupacion-de-camas-uci-pediatricas-por-virus-respiratorios/"><h4 class="card-title">Minsal reporta un 86,1% de ocupación de camas UCI pediátricas por virus respiratorios</h4></a>
+                    </div>
+                    </div>
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="/assets/img/educacion_humanizada.jpg" alt="Card image">
+                        <div class="card-body">
+                        <a href="https://radio.uchile.cl/2023/07/19/por-una-educacion-mas-humanizada-gobierno-presenta-estrategia-de-salud-mental-en-educacion-superior/"><h4 class="card-title">Por una educación “más humanizada”: Gobierno presenta Estrategia de Salud Mental en Educación Superior</h4></a>
+                    </div>
+                    </div>
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="/assets/img/mascarillas.jpg" alt="Card image">
+                        <div class="card-body">
+                        <a href="https://radio.uchile.cl/2023/06/15/uso-de-mascarillas-y-reforzamiento-de-vacunacion-expertos-y-el-gobierno-debaten-medidas-para-contener-crisis-de-virus-respiratorios/"><h4 class="card-title">Uso de mascarillas y reforzamiento de vacunación: Expertos y el Gobierno debaten medidas para contener crisis de virus respiratorios</h4></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-4">
+                </div>
+            <!-- LOGIN -->
             <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
                 <div class="card text-center">
                     <div class="mt-1 p-2 bg-primary text-white rounded">
                         <h1>Acceso Usuarios</h1>
                     </div>
                     <div class="row">
-                    <form>
-                        <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                        <div class="row">
-                        <a href="./contenido.html" class="btn btn-primary">Entrar</a>
-                        </div>
-                        <div class="row">
-                            <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
-                        </div>
-                    </form>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                            <label for="username" class="form-label">Nombre de usuario:</label>
+                            <input class="form-control" type="email" id="username" name="username" required placeholder="usuario1@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password" required placeholder="contrasena1">
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-primary" id="loginButton">Ingresar</button>
+                            </div>
+                            <div class="row">
+                                <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-
     </main>
     <footer>
-
     </footer>
-    
 </body>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

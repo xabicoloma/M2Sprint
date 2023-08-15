@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Tu Salud</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
     <header>
+        <!-- Barra de Navegación-->
         <div>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <div class="container-fluid">
@@ -45,70 +47,46 @@
         </div>
     </header>
     <main>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4">
-            <h2>Perfil</h2>
-            <h5></h5>
-            <div class="fakeimg">Charles Montgomery Burns</div>
-            <img src="/assets/img/burns.png" alt="">
-            <h3 class="mt-4">Some Links</h3>
-            <p>Lorem ipsum dolor sit ame.</p>
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                <a class="nav-link active" href="/Examenes/examenes.html">Examenes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/Perfil Usuario/calendario.html">Calendario</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/Perfil Usuario/contactos.html">Contactos</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/Perfil Usuario/enfermedades.html">Enfermedades</a>
-                </li>
-            </ul>
-            <hr class="d-sm-none">
-            </div>
-            <div class="col-sm-8">
-            <div class="container mt-3">
-                <h2>Striped Rows</h2>
-                <p>The .table-striped class adds zebra-stripes to a table:</p>            
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
-                    </tr>
-                    </tbody>
-                </table>
+      <section class="layout">
+        <div class="leftSide">
+
+        </div>
+        <div class="body">
+          
+        </div>
+        <div class="rightSide">
+          <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
+            <div class="card text-center">
+                <div class="mt-1 p-2 bg-primary text-white rounded">
+                    <h1>Acceso Usuarios</h1>
+                </div>
+                <div class="row">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de usuario:</label>
+                        <input class="form-control" type="text" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary" id="loginButton">Ingresar</button>
+                        </div>
+                        <div class="row">
+                            <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
+                        </div>
+                    </form>
                 </div>
             </div>
+          </div>
         </div>
-        </div>
-
+      </section>
     </main>
     <footer>
-
     </footer>
 </body>
+<script src="/assets/style/style.css"></script>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

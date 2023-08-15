@@ -26,12 +26,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -47,56 +49,74 @@
     <main>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                 <h2>Perfil</h2>
                 <h5></h5>
                 <div class="fakeimg">Charles Montgomery Burns</div>
                 <img src="/assets/img/burns.png" alt="">
-                <h3 class="mt-4">Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
+                <h4>Centro Medico Asociado</h4>
+                <p><a href="http://www.hospitalfricke.cl/">Hospital Gustavo Fricke</a></p>
                 <ul class="nav nav-pills flex-column">
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link active" href="/Examenes/examenes.html">Examenes</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/perfil.html">Perfil</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/calendario.html">Calendario</a>
+                    <a class="nav-link text-bg-secondary" href="/Examenes/examenes.html">Examenes</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/contactos.html">Contactos</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/calendario.html">Calendario</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/enfermedades.html">Enfermedades</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/contactos.html">Contactos</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/enfermedades.html">Enfermedades</a>
+                    </li>
+                    </button>
                 </ul>
                 <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
                 <div class="container mt-3">
-                    <h2>Calendario</h2>
-                    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                    <h2>Enfermedades</h2>
+                    <p>Usted ha sido diagnosticado con el Sindrome de los Tres Chiflados.</p>            
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
+                            <th>Enfermedad</th>
+                            <th>Fecha</th>
+                            <th>Gravedad</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
+                            <td>Pulmonia</td>
+                            <td>15-05-2023</td>
+                            <td class="text-danger">Grave</td>
                         </tr>
                         <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
+                            <td>Diabetes Juvenil</td>
+                            <td>05-04-2023</td>
+                            <td class="text-danger">Grave</td>
                         </tr>
                         <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
+                            <td>Embarazo Psicologico</td>
+                            <td>07-02-2023</td>
+                            <td class="text-danger">Grave</td>
+                        </tr>
+                        <tr>
+                            <td>Bronquitis</td>
+                            <td>12-10-2022</td>
+                            <td class="text-danger">Grave</td>
                         </tr>
                         </tbody>
                     </table>

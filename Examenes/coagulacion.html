@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Tu Salud</title>
 </head>
 <body>
@@ -26,12 +27,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -47,59 +50,84 @@
     <main>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                 <h2>Perfil</h2>
                 <h5></h5>
                 <div class="fakeimg">Charles Montgomery Burns</div>
                 <img src="/assets/img/burns.png" alt="">
-                <h3 class="mt-4">Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
+                <h4>Centro Medico Asociado</h4>
+                <p><a href="http://www.hospitalfricke.cl/">Hospital Gustavo Fricke</a></p>
                 <ul class="nav nav-pills flex-column">
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link active" href="/Examenes/examenes.html">Examenes</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/perfil.html">Perfil</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/calendario.html">Calendario</a>
+                    <a class="nav-link text-bg-secondary" href="/Examenes/examenes.html">Examenes</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/contactos.html">Contactos</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/calendario.html">Calendario</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/enfermedades.html">Enfermedades</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/contactos.html">Contactos</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/enfermedades.html">Enfermedades</a>
+                    </li>
+                    </button>
                 </ul>
                 <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
                 <div class="container mt-3">
-                    <h2>Striped Rows</h2>
-                    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                    <h2>Coagulación</h2>        
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
+                            <th>Examen</th>
+                            <th>Muestra</th>
+                            <th>Valor normal</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
+                            <td>Tiempo de Protrombina (TP)</td>
+                            <td class="text-warning">En Proceso</td>
+                            <td>Valor normal: 11-13.5 segundos.</td>
                         </tr>
                         <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
+                            <td>Índice Internacional Normalizado (INR):</td>
+                            <td class="text-warning">En Proceso</td>
+                            <td>Valor normal: 0.8-1.2.</td>
                         </tr>
                         <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
+                            <td>Tiempo de Tromboplastina Parcial Activada (TTPa o aPTT):</td>
+                            <td class="text-warning">En Proceso</td>
+                            <td>Valor normal: 25-35 segundos.</td>
+                        </tr>
+                        <tr>
+                            <td>Fibrinógeno:</td>
+                            <td class="text-warning">En Proceso</td>
+                            <td>Valor normal: 200-400 mg/dL.</td>
+                        </tr>
+                        <tr>
+                            <td>Tiempo de Coagulación (TC):</td>
+                            <td class="text-warning">En Proceso</td>
+                            <td>Valor normal: 8-12 minutos.</td>
                         </tr>
                         </tbody>
                     </table>
+                    </div>
+                    <div>
+                        <canvas id="line-chart" width="800" height="400"></canvas>
                     </div>
                 </div>
             </div>
@@ -109,5 +137,6 @@
 
     </footer>
 </body>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

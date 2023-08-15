@@ -26,12 +26,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -45,23 +47,23 @@
         </div>
     </header>
     <main>
-        <div>
-            <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
-                <div class="card text-center">
-                    <div class="mt-1 p-2 bg-primary text-white rounded">
-                        <h1>Acceso Usuarios</h1>
-                    </div>
-                    <div class="row">
-                    <form>
+        <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
+            <div class="card text-center">
+                <div class="mt-1 p-2 bg-primary text-white rounded">
+                    <h1>Acceso Usuarios</h1>
+                </div>
+                <div class="row">
+                    <form id="loginForm">
                         <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <label for="username" class="form-label">Nombre de usuario:</label>
+                        <input class="form-control" type="text" id="username" name="username" required placeholder="usuario1@gmail.com">
                         </div>
                         <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" name="password" required placeholder="contrasena1">
+                        </div>
                         <div class="row">
-                        <a href="./contenido.html" class="btn btn-primary">Entrar</a>
+                            <button type="button" class="btn btn-primary" id="loginButton">Ingresar</button>
                         </div>
                         <div class="row">
                             <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
@@ -75,5 +77,6 @@
 
     </footer>
 </body>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

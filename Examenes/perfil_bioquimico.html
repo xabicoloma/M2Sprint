@@ -26,12 +26,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -47,56 +49,93 @@
     <main>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                 <h2>Perfil</h2>
                 <h5></h5>
                 <div class="fakeimg">Charles Montgomery Burns</div>
                 <img src="/assets/img/burns.png" alt="">
-                <h3 class="mt-4">Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
+                <h4>Centro Medico Asociado</h4>
+                <p><a href="http://www.hospitalfricke.cl/">Hospital Gustavo Fricke</a></p>
                 <ul class="nav nav-pills flex-column">
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link active" href="/Examenes/examenes.html">Examenes</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/perfil.html">Perfil</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/calendario.html">Calendario</a>
+                    <a class="nav-link text-bg-secondary" href="/Examenes/examenes.html">Examenes</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/contactos.html">Contactos</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/calendario.html">Calendario</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/enfermedades.html">Enfermedades</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/contactos.html">Contactos</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/enfermedades.html">Enfermedades</a>
+                    </li>
+                    </button>
                 </ul>
                 <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
                 <div class="container mt-3">
-                    <h2>Striped Rows</h2>
-                    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                    <h2>Perfil Bioquimico</h2>          
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
+                            <th>Examen</th>
+                            <th>Muestra</th>
+                            <th>Valor normal</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>John</td>
+                            <td>Glucosa en ayunas</td>
                             <td>Doe</td>
-                            <td>john@example.com</td>
+                            <td>Normal: 70-99 mg/dL (3.9-5.5 mmol/L).</td>
                         </tr>
                         <tr>
-                            <td>Mary</td>
+                            <td>Creatinina</td>
                             <td>Moe</td>
-                            <td>mary@example.com</td>
+                            <td>0.6-1.2 mg/dL (53-106 µmol/L).</td>
                         </tr>
                         <tr>
-                            <td>July</td>
+                            <td>Urea nitrógeno en sangre (BUN)</td>
                             <td>Dooley</td>
-                            <td>july@example.com</td>
+                            <td>8-20 mg/dL (2.9-7.1 mmol/L).</td>
+                        </tr>
+                        <tr>
+                            <td>Ácido úrico</td>
+                            <td>Dooley</td>
+                            <td>3.4-7.0 mg/dL (202-416 µmol/L).</td>
+                        </tr>
+                        <tr>
+                            <td>Colesterol total</td>
+                            <td>Dooley</td>
+                            <td>Deseable: Menos de 200 mg/dL (5.17 mmol/L).</td>
+                        </tr>
+                        <tr>
+                            <td>Colesterol LDL (lipoproteínas de baja densidad)</td>
+                            <td>Dooley</td>
+                            <td>Deseable: Menos de 100 mg/dL (2.59 mmol/L).</td>
+                        </tr>
+                        <tr>
+                            <td>Colesterol HDL (lipoproteínas de alta densidad)</td>
+                            <td>Dooley</td>
+                            <td>Deseable: 60 mg/dL (1.55 mmol/L) o más (considerado protector para el corazón).</td>
+                        </tr>
+                        <tr>
+                            <td>Triglicéridos</td>
+                            <td>Dooley</td>
+                            <td>Deseable: Menos de 150 mg/dL (1.70 mmol/L).</td>
                         </tr>
                         </tbody>
                     </table>

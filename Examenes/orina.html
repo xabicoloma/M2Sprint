@@ -26,12 +26,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proveedores de Salud</a>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
-                        <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
-                        <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
-                        <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
-                        <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
-                        <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><a class="dropdown-item" href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/">Hospitales</a></li>
+                            <li><a class="dropdown-item" href="https://www.clinicasdechile.cl/asociados/">Clinicas</a></li>
+                            <li><a class="dropdown-item" href="https://samu.cl/">Ambulancias</a></li>
+                            <li><a class="dropdown-item" href="https://www.fonasa.cl/">Fonasa</a></li>
+                            <li><a class="dropdown-item" href="http://www.isapre.cl/las-isapres">Isapres</a></li>
+                            <li><a class="dropdown-item" href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html">Medicos Inscritos</a></li>
+                            <li><hr class="dropdown-divider"></hr></li>
+                            <li><a class="dropdown-item" href="/proveedores.html">Pagina Proveedores</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -47,56 +49,93 @@
     <main>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                 <h2>Perfil</h2>
                 <h5></h5>
                 <div class="fakeimg">Charles Montgomery Burns</div>
                 <img src="/assets/img/burns.png" alt="">
-                <h3 class="mt-4">Some Links</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
+                <h4>Centro Medico Asociado</h4>
+                <p><a href="http://www.hospitalfricke.cl/">Hospital Gustavo Fricke</a></p>
                 <ul class="nav nav-pills flex-column">
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link active" href="/Examenes/examenes.html">Examenes</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/perfil.html">Perfil</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/calendario.html">Calendario</a>
+                    <a class="nav-link text-bg-secondary" href="/Examenes/examenes.html">Examenes</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/contactos.html">Contactos</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/calendario.html">Calendario</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
                     <li class="nav-item">
-                    <a class="nav-link" href="/Perfil Usuario/enfermedades.html">Enfermedades</a>
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/contactos.html">Contactos</a>
                     </li>
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-secondary" href="/PerfilUsuario/enfermedades.html">Enfermedades</a>
+                    </li>
+                    </button>
                 </ul>
                 <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
                 <div class="container mt-3">
-                    <h2>Striped Rows</h2>
-                    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                    <h2>Orina</h2>          
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
+                            <th>Examen</th>
+                            <th>Muestra</th>
+                            <th>Valor normal</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>John</td>
+                            <td>pH</td>
                             <td>Doe</td>
-                            <td>john@example.com</td>
+                            <td>4.6 a 8.0: Indica la acidez o alcalinidad de la orina.</td>
                         </tr>
                         <tr>
-                            <td>Mary</td>
+                            <td>Proteínas</td>
                             <td>Moe</td>
-                            <td>mary@example.com</td>
+                            <td>Negativo o trazas: La presencia de proteínas en la orina puede ser indicativa de problemas renales o urinarios.</td>
                         </tr>
                         <tr>
-                            <td>July</td>
+                            <td>Glucosa</td>
                             <td>Dooley</td>
-                            <td>july@example.com</td>
+                            <td>Negativo: La presencia de glucosa en la orina puede ser un signo de diabetes o problemas metabólicos.</td>
+                        </tr>
+                        <tr>
+                            <td>Cetonas</td>
+                            <td>Dooley</td>
+                            <td>Negativo: La presencia de cetonas puede ser un signo de descompensación diabética o de dietas cetogénicas.</td>
+                        </tr>
+                        <tr>
+                            <td>Bilirrubina</td>
+                            <td>Dooley</td>
+                            <td>Negativo: La presencia de bilirrubina en la orina puede indicar problemas hepáticos.</td>
+                        </tr>
+                        <tr>
+                            <td>Urobilinógeno</td>
+                            <td>Dooley</td>
+                            <td>0.2 a 1.0 mg/dL: Valores aumentados pueden ser indicativos de enfermedades hepáticas.</td>
+                        </tr>
+                        <tr>
+                            <td>Hemoglobina o sangre</td>
+                            <td>Dooley</td>
+                            <td>Negativo: La presencia de sangre en la orina puede indicar problemas renales o urinarios.</td>
+                        </tr>
+                        <tr>
+                            <td>Leucocitos</td>
+                            <td>Dooley</td>
+                            <td>0-5 por campo de visión: Número normal de leucocitos en el análisis microscópico.</td>
                         </tr>
                         </tbody>
                     </table>
