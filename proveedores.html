@@ -19,9 +19,6 @@
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/login.html">Acceso</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/registro.html">Registro</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -39,8 +36,37 @@
                     </li>
                     </ul>
                     <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button">Buscar</button>
+                        <form class="d-flex">
+                            <button class="btn btn-primary me-md-2" type="button" id="openModalBtn">Acceso usuarios</button>
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                    <span id="closeModalBtn" class="close">&times;</span>
+                                    <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
+                                        <div class="card text-center">
+                                            <div class="mt-1 p-2 bg-primary text-white rounded">
+                                                <h1>Acceso Usuarios</h1>
+                                            </div>
+                                            <form id="loginForm">
+                                                <div class="mb-3">
+                                                <label for="username" class="form-label">Nombre de usuario:</label>
+                                                <input class="form-control" type="email" id="username" name="username" required placeholder="usuario1@gmail.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                <label for="password" class="form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" id="password" name="password" required placeholder="contrasena1">
+                                                </div>
+                                                <div class="row justify-content-center ">
+                                                    <button type="button" class="btn btn-primary" id="loginButton">Ingresar</button>
+                                                </div>
+                                                <div class="row justify-content-center">
+                                                    <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </form>
                 </div>
                 </div>
@@ -48,58 +74,60 @@
         </div>
     </header>
     <main>
-        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/hospital.jpg" class="card-img-top" alt="Hospital">
-                    <div class="card-body">
-                    <h5 class="card-title">Hospitales</h5>
-                    <p class="card-text">Descubre una red de hospitales en Chile que ofrecen atención médica especializada. Explora instalaciones avanzadas y profesionales altamente capacitados.</p>
+        <div class="col-sm-12 p-4 d-flex justify-content-center">
+            <div class="row row-cols-1 row-cols-md-3 g-2">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://reportesdeis.minsal.cl/ListaEstablecimientoWebSite/"><img src="/assets/img/hospital.jpg" class="card-img-top" alt="Hospital"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Hospitales</h5>
+                        <p class="card-text">Descubre una red de hospitales en Chile que ofrecen atención médica especializada. Explora instalaciones avanzadas y profesionales altamente capacitados.</p>
+                        </div>
                     </div>
                 </div>
-                </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/clinicas.jpg" class="card-img-top" alt="Clinicas">
-                    <div class="card-body">
-                    <h5 class="card-title">Clinicas</h5>
-                    <p class="card-text">Explora nuestras clínicas médicas en Chile, donde puedes acceder a servicios médicos especializados y tratamientos adaptados a tus necesidades.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://www.clinicasdechile.cl/asociados/"><img src="/assets/img/clinicas.jpg" class="card-img-top" alt="Clinicas"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Clinicas</h5>
+                        <p class="card-text">Explora nuestras clínicas médicas en Chile, donde puedes acceder a servicios médicos especializados y tratamientos adaptados a tus necesidades.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/ambulancia.jpg" class="card-img-top" alt="Ambulancia">
-                    <div class="card-body">
-                    <h5 class="card-title">Ambulancias</h5>
-                    <p class="card-text">Nuestro servicio de ambulancias en Chile está disponible para atender situaciones médicas urgentes. Contamos con personal médico y vehículos equipados para brindar atención en el momento que más se necesita.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://samu.cl/"><img src="/assets/img/ambulancia.jpg" class="card-img-top" alt="Ambulancia"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Ambulancias</h5>
+                        <p class="card-text">Nuestro servicio de ambulancias en Chile está disponible para atender situaciones médicas urgentes. Contamos con personal médico y vehículos equipados para brindar atención en el momento que más se necesita.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/fonasa.jpg" class="card-img-top" alt="Fonasa">
-                    <div class="card-body">
-                    <h5 class="card-title">Fonasa</h5>
-                    <p class="card-text">Descubre los beneficios de ser parte de FONASA, el sistema de salud público de Chile. Obtén información sobre cómo acceder a servicios médicos y tratamientos a través de nuestra red de prestadores.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://www.fonasa.cl/"><img src="/assets/img/fonasa.jpg" class="card-img-top" alt="Fonasa"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Fonasa</h5>
+                        <p class="card-text">Descubre los beneficios de ser parte de FONASA, el sistema de salud público de Chile. Obtén información sobre cómo acceder a servicios médicos y tratamientos a través de nuestra red de prestadores.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/isapres.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Isapres</h5>
-                    <p class="card-text">Explora los planes de salud personalizados que ofrecen las ISAPRES en Chile. Obtén acceso a una red privada de proveedores médicos y elige la cobertura que se adapte a tus necesidades.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="http://www.isapre.cl/las-isapres"><img src="/assets/img/isapres.png" class="card-img-top" alt="Isapres"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Isapres</h5>
+                        <p class="card-text">Explora los planes de salud personalizados que ofrecen las ISAPRES en Chile. Obtén acceso a una red privada de proveedores médicos y elige la cobertura que se adapte a tus necesidades.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/img/medicos.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Medicos Inscritos</h5>
-                    <p class="card-text">Encuentra a los médicos inscritos en Chile que están autorizados para brindar atención médica de calidad. Explora nuestro directorio y encuentra profesionales de confianza en diversas especialidades.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://www.supersalud.gob.cl/servicios/669/w3-article-5587.html"><img src="/assets/img/medicos.jpg" class="card-img-top" alt="Medicos"></a>
+                        <div class="card-body">
+                        <h5 class="card-title">Medicos Inscritos</h5>
+                        <p class="card-text">Encuentra a los médicos inscritos en Chile que están autorizados para brindar atención médica de calidad. Explora nuestro directorio y encuentra profesionales de confianza en diversas especialidades.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,5 +137,6 @@
 
     </footer>
 </body>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

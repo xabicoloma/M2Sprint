@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Tu Salud</title>
 </head>
@@ -17,9 +18,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login.html">Acceso</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/registro.html">Registro</a>
                     </li>
@@ -38,8 +36,37 @@
                     </li>
                     </ul>
                     <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button">Buscar</button>
+                        <form class="d-flex">
+                            <button class="btn btn-primary me-md-2" type="button" id="openModalBtn">Acceso usuarios</button>
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                    <span id="closeModalBtn" class="close">&times;</span>
+                                    <div class="col max" style="width: 300px; margin: 0 auto; margin-top: 50px;">
+                                        <div class="card text-center">
+                                            <div class="mt-1 p-2 bg-primary text-white rounded">
+                                                <h1>Acceso Usuarios</h1>
+                                            </div>
+                                            <form id="loginForm">
+                                                <div class="mb-3">
+                                                <label for="username" class="form-label">Nombre de usuario:</label>
+                                                <input class="form-control" type="email" id="username" name="username" required placeholder="usuario1@gmail.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                <label for="password" class="form-label">Contraseña:</label>
+                                                <input type="password" class="form-control" id="password" name="password" required placeholder="contrasena1">
+                                                </div>
+                                                <div class="row">
+                                                    <button type="button" class="btn btn-primary" id="loginButton">Ingresar</button>
+                                                </div>
+                                                <div class="row">
+                                                    <a href="./registro.html" class="btn btn-success">Crear cuenta nueva</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </form>
                 </div>
                 </div>
@@ -128,5 +155,6 @@
 
     </footer>
 </body>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
