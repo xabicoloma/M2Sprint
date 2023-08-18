@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" src="/assets/style/style.css" type="text/css">
     <link rel="stylesheet" href="/assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Tu Salud</title>
@@ -113,10 +114,15 @@
                 <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
+                    <div class="container mt-3">
+                        <button id="agregarFormulario">Agregar Enfermedad</button>
+                        <div id="contenedorFormularios"></div>
+                    </div>
+
                 <div class="container mt-3">
                     <h2>Enfermedades</h2>
                     <p>Usted ha sido diagnosticado con el Sindrome de los Tres Chiflados.</p>        
-                    <table class="table table-striped">
+                    <table class="table">
                         <thead>
                         <tr>
                             <th>Enfermedad</th>
@@ -128,22 +134,27 @@
                         <tr>
                             <td>Pulmonia</td>
                             <td>15-05-2023</td>
-                            <td class="text-danger">Grave</td>
+                            <td class="text">Grave</td>
                         </tr>
                         <tr>
                             <td>Diabetes Juvenil</td>
                             <td>05-04-2023</td>
-                            <td class="text-danger">Grave</td>
+                            <td class="text">Grave</td>
                         </tr>
                         <tr>
                             <td>Embarazo Psicologico</td>
                             <td>07-02-2023</td>
-                            <td class="text-danger">Grave</td>
+                            <td class="text">Grave</td>
                         </tr>
                         <tr>
                             <td>Bronquitis</td>
                             <td>12-10-2022</td>
-                            <td class="text-danger">Grave</td>
+                            <td class="text">Grave</td>
+                        </tr>
+                        <tr>
+                            <td id="listaNombres"></td>
+                            <td id="listaEmails"></td>
+                            <td id="listaFono"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -156,6 +167,11 @@
 
     </footer>
 </body>
-<script src="/assets/js/formulario.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.7.0.js"
+integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+crossorigin="anonymous"></script>
+<script src='/assets/js/formulario2.js'></script>
+<script src="/assets/js/logica.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

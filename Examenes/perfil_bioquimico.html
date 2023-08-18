@@ -126,48 +126,55 @@
                         <tbody>
                         <tr>
                             <td>Glucosa en ayunas</td>
-                            <td>Doe</td>
+                            <td>123 mg/dL</td>
                             <td>Normal: 70-99 mg/dL (3.9-5.5 mmol/L).</td>
                         </tr>
                         <tr>
                             <td>Creatinina</td>
-                            <td>Moe</td>
+                            <td>0.2 mg/dL</td>
                             <td>0.6-1.2 mg/dL (53-106 µmol/L).</td>
                         </tr>
                         <tr>
                             <td>Urea nitrógeno en sangre (BUN)</td>
-                            <td>Dooley</td>
+                            <td>3 mg/dL </td>
                             <td>8-20 mg/dL (2.9-7.1 mmol/L).</td>
                         </tr>
                         <tr>
                             <td>Ácido úrico</td>
-                            <td>Dooley</td>
+                            <td>12.6 mg/dL</td>
                             <td>3.4-7.0 mg/dL (202-416 µmol/L).</td>
                         </tr>
                         <tr>
                             <td>Colesterol total</td>
-                            <td>Dooley</td>
+                            <td>316 mg/dL</td>
                             <td>Deseable: Menos de 200 mg/dL (5.17 mmol/L).</td>
                         </tr>
                         <tr>
                             <td>Colesterol LDL (lipoproteínas de baja densidad)</td>
-                            <td>Dooley</td>
+                            <td>139 mg/dL</td>
                             <td>Deseable: Menos de 100 mg/dL (2.59 mmol/L).</td>
                         </tr>
                         <tr>
                             <td>Colesterol HDL (lipoproteínas de alta densidad)</td>
-                            <td>Dooley</td>
+                            <td>46 mg/dL</td>
                             <td>Deseable: 60 mg/dL (1.55 mmol/L) o más (considerado protector para el corazón).</td>
                         </tr>
                         <tr>
                             <td>Triglicéridos</td>
-                            <td>Dooley</td>
+                            <td>175 mg/dL</td>
                             <td>Deseable: Menos de 150 mg/dL (1.70 mmol/L).</td>
                         </tr>
                         </tbody>
                     </table>
                     </div>
-                </div>
+                    <h2>Grafica Resultados Glucosa en ayunas</h2>
+                    <div style="width: 80%; margin: auto;">
+                        <canvas id="barChart1"></canvas>
+                    </div>
+                    <h2>Grafica Resultados Creatinina</h2>
+                    <div style="width: 80%; margin: auto; margin-top: 30px;">
+                        <canvas id="barChart2"></canvas>
+                    </div>
             </div>
             </div>
     </main>
@@ -175,6 +182,8 @@
 
     </footer>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
 <script src="/assets/js/logica.js"></script>
+<script src="/assets/js/graficos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>
